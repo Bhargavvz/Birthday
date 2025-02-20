@@ -18,6 +18,20 @@ const Button = styled(motion.button)`
   align-items: center;
   gap: 10px;
   z-index: 100;
+  background-image: url('/assets/photos/thumbnail.jpg');
+
+  @media (max-width: 768px) {
+    bottom: 20px;
+    right: 50%;
+    transform: translateX(50%);
+    padding: 12px 20px;
+    font-size: 1rem;
+  }
+
+  @media (max-width: 480px) {
+    padding: 10px 15px;
+    font-size: 0.9rem;
+  }
 
   &:hover {
     background: ${props => props.isEnabled ? 'var(--secondary-color)' : 'rgba(255, 105, 180, 0.5)'};

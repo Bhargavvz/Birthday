@@ -53,7 +53,7 @@ const RomanticEffects = () => {
 
   // Create floating love emojis
   useEffect(() => {
-    const loveEmojis = ['💝', '💖', '💗', '💓', '💕', '💌', '🌹'];
+    const loveEmojis = ['💝', '💖', '💗', '💓', '💕', '💋', '💜'];
     const createEmoji = () => {
       const emoji = {
         id: Date.now(),

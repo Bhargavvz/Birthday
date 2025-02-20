@@ -15,6 +15,14 @@ import BirthdayCelebration from './components/BirthdayCelebration';
 import VideoButton from './components/VideoButton';
 import VideoModal from './components/VideoModal';
 import Footer from './components/Footer';
+import { Global, css } from '@emotion/react';
+
+const globalStyles = css`
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+  }
+`;
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -64,35 +72,38 @@ function App() {
   }
 
   return (
-    <Router>
-      <div className="app">
-        <Stars />
-        <FloatingHearts />
-        <RomanticEffects />
-        <Navigation />
-        <main>
-          <WelcomeScreen />
-          <BirthdayCountdown 
-            onCelebration={handleCelebrationStart}
+    <>
+      <Global styles={globalStyles} />
+      <Router>
+        <div className="app">
+          <Stars />
+          <FloatingHearts />
+          <RomanticEffects />
+          <Navigation />
+          <main>
+            <WelcomeScreen />
+            <BirthdayCountdown 
+              onCelebration={handleCelebrationStart}
+            />
+            <Timeline />
+            <PhotoGallery />
+            <LoveNotes />
+            <LoveLetter />
+          </main>
+          <VideoButton 
+            onClick={handleVideoClick}
+            isEnabled={isAfterBirthday()}
           />
-          <Timeline />
-          <PhotoGallery />
-          <LoveNotes />
-          <LoveLetter />
-        </main>
-        <VideoButton 
-          onClick={handleVideoClick}
-          isEnabled={isAfterBirthday()}
-        />
-        {showCelebration && isAfterBirthday() && (
-          <BirthdayCelebration onClose={handleCelebrationClose} />
-        )}
-        {showVideo && isAfterBirthday() && (
-          <VideoModal onClose={handleVideoClose} />
-        )}
-        <Footer />
-      </div>
-    </Router>
+          {showCelebration && isAfterBirthday() && (
+            <BirthdayCelebration onClose={handleCelebrationClose} />
+          )}
+          {showVideo && isAfterBirthday() && (
+            <VideoModal onClose={handleVideoClose} />
+          )}
+          <Footer />
+        </div>
+      </Router>
+    </>
   );
 }
 

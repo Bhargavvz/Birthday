@@ -16,6 +16,10 @@ const CelebrationContainer = styled(motion.div)`
   align-items: center;
   justify-content: center;
   padding: 20px;
+
+  @media (max-width: 768px) {
+    padding: 10px;
+  }
 `;
 
 const CloseButton = styled(motion.button)`
@@ -32,6 +36,13 @@ const CloseButton = styled(motion.button)`
   backdrop-filter: blur(5px);
   z-index: 1001;
   
+  @media (max-width: 768px) {
+    top: 10px;
+    right: 10px;
+    padding: 8px 15px;
+    font-size: 0.9rem;
+  }
+
   &:hover {
     background: rgba(255, 255, 255, 0.3);
   }

@@ -93,37 +93,37 @@ const Modal = styled(motion.div)`
 const photos = [
   {
     id: 1,
-    src: "/src/assets/gallery/gallery1.jpg",
+    src: "/assets/gallery/gallery1.jpg",
     caption: "We were bestest friends",
     date: "The person I don't want to lose"
   },
   {
     id: 2,
-    src: "/src/assets/gallery/gallery2.jpg",
+    src: "/assets/gallery/gallery2.jpg",
     caption: "My Birthday",
     date: "You had really made me feel special"
   },
   {
     id: 3,
-    src: "/src/assets/gallery/gallery3.jpg",
+    src: "/assets/gallery/gallery3.jpg",
     caption: "Azura",
     date: "Summer memories"
   },
   {
     id: 4,
-    src: "/src/assets/gallery/gallery4.jpg",
+    src: "/assets/gallery/gallery4.jpg",
     caption: "Charminar Shopping",
     date: "I had made you so mad on that day, sorry my love"
   },
   {
     id: 5,
-    src: "/src/assets/gallery/gallery5.jpg",
+    src: "/assets/gallery/gallery5.jpg",
     caption: "Some Random Pic",
     date: "We take a lot of random pics together"
   },
   {
     id: 6,
-    src: "/src/assets/gallery/gallery6.jpg",
+    src: "/assets/gallery/gallery6.jpg",
     caption: "Special Moments",
     date: "Just because"
   }

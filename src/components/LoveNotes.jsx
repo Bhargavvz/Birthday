@@ -109,22 +109,22 @@ const LoveNotes = () => {
     {
       id: 1,
       content: "Your smile brightens my darkest days...",
-      image: "/src/assets/photos/note1.jpg",
-      date: "January 15, 2024",
+      image: "/assets/photos/note1.jpg",
+      date: "Click to reveal",
       isRevealed: false
     },
     {
       id: 2,
       content: "Every moment with you feels like magic...",
-      image: "/src/assets/photos/note2.jpg",
-      date: "January 20, 2024",
+      image: "/assets/photos/note2.jpg",
+      date: "Click to reveal",
       isRevealed: false
     },
     {
       id: 3,
       content: "You make my heart skip a beat...",
-      image: "/src/assets/photos/note3.jpg",
-      date: "February 1, 2024",
+      image: "/assets/photos/note3.jpg",
+      date: "Click to reveal",
       isRevealed: false
     }
   ]);

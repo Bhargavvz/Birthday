@@ -7,6 +7,10 @@ const TimelineSection = styled.section`
   padding: 100px 20px;
   position: relative;
   background: linear-gradient(to bottom, rgba(10, 10, 42, 0.8), rgba(10, 10, 42, 0.95));
+
+  @media (max-width: 768px) {
+    padding: 80px 15px;
+  }
 `;
 
 const TimelineContainer = styled.div`
@@ -29,11 +33,10 @@ const TimelineContainer = styled.div`
       transparent
     );
     filter: drop-shadow(0 0 8px var(--primary-color));
-  }
 
-  @media (max-width: 768px) {
-    &::before {
-      left: 20px;
+    @media (max-width: 768px) {
+      left: 30px;
+      transform: none;
     }
   }
 `;
@@ -50,7 +53,9 @@ const TimelineItem = styled(motion.div)`
 
   @media (max-width: 768px) {
     flex-direction: column !important;
-    padding-left: 45px;
+    padding: 30px 0;
+    padding-left: 60px;
+    position: relative;
   }
 `;
 
@@ -64,18 +69,9 @@ const TimelineContent = styled(motion.div)`
   position: relative;
   overflow: hidden;
   
-  &::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(45deg, 
-      rgba(255, 105, 180, 0.1),
-      rgba(255, 20, 147, 0.1)
-    );
-    z-index: -1;
+  @media (max-width: 768px) {
+    width: 100%;
+    margin-left: 0;
   }
 
   .image-container {
@@ -102,6 +98,10 @@ const TimelineContent = styled(motion.div)`
     margin-bottom: 10px;
     font-family: 'Great Vibes', cursive;
     font-size: 2rem;
+
+    @media (max-width: 768px) {
+      font-size: 1.8rem;
+    }
   }
 
   .date {
@@ -115,6 +115,10 @@ const TimelineContent = styled(motion.div)`
     line-height: 1.6;
     font-family: 'Dancing Script', cursive;
     font-size: 1.2rem;
+
+    @media (max-width: 768px) {
+      font-size: 1.1rem;
+    }
   }
 
   .love-quote {
@@ -122,19 +126,6 @@ const TimelineContent = styled(motion.div)`
     color: var(--accent-color);
     margin-top: 10px;
     font-size: 1rem;
-  }
-
-  @media (max-width: 768px) {
-    width: 100%;
-    margin-left: 20px;
-    
-    h3 {
-      font-size: 1.5rem;
-    }
-    
-    p {
-      font-size: 1rem;
-    }
   }
 `;
 
@@ -158,7 +149,8 @@ const TimelineDot = styled(motion.div)`
   }
   
   @media (max-width: 768px) {
-    left: 20px;
+    left: 30px;
+    transform: none;
   }
 `;
 
@@ -166,10 +158,19 @@ const SectionTitle = styled(motion.h2)`
   text-align: center;
   font-size: 3.5rem;
   margin-bottom: 50px;
-  background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: var(--primary-color);
+  font-family: 'Great Vibes', cursive;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+
+  @media (max-width: 768px) {
+    font-size: 2.8rem;
+    margin-bottom: 40px;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+  }
 `;
 
 const Timeline = () => {
@@ -186,49 +187,49 @@ const Timeline = () => {
       date: "April 7, 2023",
       title: "Us two in one frame",
       description: "That day we were not that close but we were still enjoying the day",
-      image: "/src/assets/timeline/moment1.gif",
+      image: "/assets/timeline/moment1.gif",
       quote: "Some meetings are not by chance, they're destined by the heart. ❤️"
     },
     {
       date: "May 31, 2023",
       title: "First Pic Together",
       description: "Remember that we had started to talk to each other",
-      image: "/src/assets/timeline/moment2.jpg",
+      image: "/assets/timeline/moment2.jpg",
       quote: "Maybe that was the day I had started caring for you. 💝"
     },
     {
       date: "July 12, 2024",
       title: "The Day I got rejected",
       description: "I was controlling my feelings but ya, I was so much hurt",
-      image: "/src/assets/timeline/moment3.jpg",
+      image: "/assets/timeline/moment3.jpg",
       quote: "I didn't lost hope on you I was waiting for you to accept me 💑"
     },
     {
       date: "September 11, 2024",
       title: "I didn't lost hope",
       description: "I had started to control my feelings",
-      image: "/src/assets/timeline/moment4.jpg",
+      image: "/assets/timeline/moment4.jpg",
       quote: "The wait was worth it. 💑"
     },
     {
       date: "December 16, 2024",
       title: "The Day you finally accepted me",
       description: "Under the starlit sky, our hearts connected...",
-      image: "/src/assets/timeline/moment5.jpg",
+      image: "/assets/timeline/moment5.jpg",
       quote: "The Most Wonderfull day of my life, My love was accepted. 💑"
     },
     {
       date: "January 7, 2025",
       title: "Our First Date",
       description: "I had so much fun with you that day",
-      image: "/src/assets/timeline/moment6.jpg",
+      image: "/assets/timeline/moment6.jpg",
       quote: "We had so much fun that day. 💝"
     },
     {
       date: "Today",
       title: "Happy Birthday, My Love",
       description: "Today we celebrate you, the most amazing person...",
-      image: "/src/assets/timeline/moment7.jpg",
+      image: "/assets/timeline/moment7.jpg",
       quote: "You're not just my love, you're my everything. 🎂💖"
     }
   ];

@@ -57,17 +57,17 @@ const Signature = styled(motion.p)`
 
 const LoveLetter = () => {
   const letterContent = `
-My Dearest Love,
+Gunni Nanna,
 
-On your special day, I want to express just how much you mean to me. Every moment with you is a treasure, every smile you share lights up my world, and every laugh we share is music to my ears.
+Happy Happier and Happiest Birthdayyyy nanna, It is finally your day, and my day too. the day I had waited for sooo many days. I am soo soo sooooo sorry nanna nee birthday ki nen undalekapotunna. nen aithe nee birthday ni the most memorable day in your life cheddam anukunna nanna, but due to some other things nen nee birthday ni manchiga celebrate cheyyalekapotunna. nee kante ekkuva nene miss aitha nanna nee birthday ne! But nen naa feeling neeku chupettakunda neeku nenu leni feeling lekunda cheddam ani anukunna anduke I am trying my best to make you happy even if I am not around. 
 
-You've brought so much joy and love into my life. Your kindness, your strength, and your beautiful soul inspire me every day. I feel blessed to have you in my life, and I cherish every moment we spend together.
+But nanna do you remember naa birthday ni entha manchiga celebrate chesavo. literally it was the best day of my life. probably naa birthday ni nen eppudu antha manchiga celebrate chesukole kavachu nanna. Nee birthday kuda alane cheddam anukunna but sadly it is not possiable.
 
-Today, as we celebrate your birthday, I want you to know that you're not just my love – you're my best friend, my confidant, and my greatest blessing. You make every day brighter just by being you.
+But nanna remember one thing…. I love youuu soooo soooo much nannaa, nee kante challlaaa ekkuva.. nuv naa life lo jargina oka miracle nanna… nuv dorkatam nen enni janmalu chesukunna punyamo.. nijam nanna joke kaadu nen nijam ga challlaa lucky nee lanti manchi, caring, loving, cute, pretty, and most perfect ammayi dorkatam. Really I feel so blessed to have you in my life.
 
-I promise to always be there for you, to support your dreams, to share your joys and sorrows, and to love you more with each passing day.
+Nanna, I am really sorry if i done anything wrong. naaku telusu ninnu chala sarlu hurt chesa ani but nanna avvi anni naaku telvakunda chesi unta.. oka vela em aina telsi chesina please koncham kshaminchu bngrm. Nanna I promise you, nen ninnu eppudu odleyya nanna. I will be always there for you untill death separates us. I will be your biggest supporter!
 
-Happy Birthday, my love! May this year bring you all the happiness you deserve and more.
+Once again Happy Birthday nanna,  May this year bring you all the happiness you deserve and more.
 
 With all my heart,`;
 
@@ -102,7 +102,7 @@ With all my heart,`;
           viewport={{ once: true }}
           transition={{ delay: 0.6 }}
         >
-          Your Love ❤️
+          Vaatsavv ❤️
         </Signature>
       </LetterContainer>
     </LetterSection>
